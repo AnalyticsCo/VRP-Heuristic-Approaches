@@ -61,11 +61,6 @@ class DataPrep(object):
         A_Data = Data.to_numpy()
         self.timeMatrix=A_Data[1:,2:]
 
-
-
-
-
-
     def  KmeanCluster(self):
         origin_x = []
         origin_y =[]
@@ -113,13 +108,6 @@ class DataPrep(object):
         centers = kmeans.cluster_centers_
         plt.scatter(centers[:, 0], centers[:, 1], c='black', s=100, alpha=0.5)
         plt.show()
-
-
-
-
-        return
-
-
 
 
     def Node_initialize(self,Data):
@@ -187,7 +175,6 @@ class DataPrep(object):
             dummylist.clear()
         return List
 
-
     def distCalc(self,nodeOne,nodeTwo):
 
         nodeOne =int(nodeOne)-1
@@ -201,7 +188,6 @@ class DataPrep(object):
         dlat = abs(lat2 - lat1) * 111
 
         distance = sqrt(dlon ** 2 + dlat ** 2)
-
         return distance
 
 
