@@ -8,12 +8,10 @@ from scipy import stats
 import pandas as pd
 from math import sin, cos, sqrt, atan2
 import sys
-
 import  copy
 from Node import *
 from Order import *
 from pandas import DataFrame
-import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
